@@ -1,31 +1,13 @@
-<xml xmlns="https://developers.google.com/blockly/xml"><variables></variables><block type="device_forever" id="x)S/TJaMRyIgc0`6Kk]a" x="287" y="-176"></block><block type="pxt-on-start" id="0!g?[Z;?ki|-:LVlUb+;" x="0" y="0"><statement name="HANDLER"><block type="device_while" id="V[GeFU:9ZHe6o3Cd]nR?"><value name="COND"><shadow type="logic_boolean" id=",W6t~]9f-RB26lJEEHR-"><field name="BOOL">TRUE</field></shadow></value><statement name="DO"><block type="controls_if" id="Wc]q[moiKEPkT)]:LS}-"><mutation elseif="3" else="1"></mutation><value name="IF0"><shadow type="logic_boolean" id="^f!^E^/Y%ioER@~bJMW,"><field name="BOOL">TRUE</field></shadow><block type="logic_operation" id="SGaWD!hu%.92Us8hh7@*"><field name="OP">AND</field><value name="A"><block type="Tinybit_Line_Sensor" id="X8jrsq4Cw^6X?a0u%)1^"><field name="direct">Tinybit.enPos.LeftState</field><field name="value">Tinybit.enLineState.Black</field></block></value><value name="B"><block type="Tinybit_Line_Sensor" id="%%O}ei9ELAk2KxTK[h=_"><field name="direct">Tinybit.enPos.RightState</field><field name="value">Tinybit.enLineState.Black</field></block></value></block></value><statement name="DO0"><block type="device_show_leds" id="QK9-iBnFs%WN:tF#42/="><field name="LEDS">`
+<xml xmlns="https://developers.google.com/blockly/xml"><variables></variables><block type="pxt-on-start" id="xRRgvHNlG#rZ^u`HECiY" x="20" y="20"><statement name="HANDLER"><block type="device_while" id="6~1!yMje#r?0!!1-R!yw"><value name="COND"><shadow type="logic_boolean" id="9~=ub8;ZFH3W#X)FnB`W"><field name="BOOL">TRUE</field></shadow></value><statement name="DO"><block type="controls_if" id="a~oZ$2i$Z-#^.sk2Hfq?"><mutation elseif="3" else="1"></mutation><value name="IF0"><shadow type="logic_boolean" id="8l@2P:%1%v,SRH0F|cg`"><field name="BOOL">TRUE</field></shadow><block type="logic_operation" id="9Zz2s/sbaIZZ[si2O/OB"><field name="OP">AND</field><value name="A"><shadow type="logic_boolean" id="24LAB7lv;n3@0rGI%n7d"><field name="BOOL">TRUE</field></shadow><block type="Tinybit_Line_Sensor" id="!p#S_6N]n%$~jlK$Z[lM"><field name="direct">Tinybit.enPos.LeftState</field><field name="value">Tinybit.enLineState.Black</field></block></value><value name="B"><shadow type="logic_boolean" id="*DwwlU,u?_lE0OLAi;J{"><field name="BOOL">TRUE</field></shadow><block type="Tinybit_Line_Sensor" id="Gq?O8`PfH:+%`Lms5%`V"><field name="direct">Tinybit.enPos.RightState</field><field name="value">Tinybit.enLineState.Black</field></block></value></block></value><statement name="DO0"><block type="Tinybit_CarCtrlSpeed" id="z*)-kehNNR*:NV:QnM88"><field name="index">Tinybit.CarState.Car_Right</field><value name="speed"><shadow type="math_number_minmax" id=";Syn~k*ywbW=e!n{b/j?"><mutation min="0" max="255" precision="0"></mutation><field name="SLIDER">60</field></shadow></value></block></statement><value name="IF1"><shadow type="logic_boolean" id="@n|i0_m8M9bH7dR_h2`r"><field name="BOOL">TRUE</field></shadow><block type="Tinybit_Line_Sensor" id="/^}}?mI]*fXW_0b](pPK"><field name="direct">Tinybit.enPos.RightState</field><field name="value">Tinybit.enLineState.Black</field></block></value><statement name="DO1"><block type="Tinybit_CarCtrlSpeed" id="=BNNI+Vvrb!YVeZ1}[!-"><field name="index">Tinybit.CarState.Car_Run</field><value name="speed"><shadow type="math_number_minmax" id="]$Ek19ZurmT10ruf.YHX"><mutation min="0" max="255" precision="0"></mutation><field name="SLIDER">69</field></shadow></value></block></statement><value name="IF2"><shadow type="logic_boolean" id="b;6C=PA0t/Ah$/z`C}Be"><field name="BOOL">TRUE</field></shadow><block type="Tinybit_Line_Sensor" id="Me;H3;NdYH:x9U-kqBDw"><field name="direct">Tinybit.enPos.LeftState</field><field name="value">Tinybit.enLineState.Black</field></block></value><statement name="DO2"><block type="device_show_leds" id=":sRg@-{e!wvYf`0A==Vk"><field name="LEDS">`
         . . # . . 
         . . # . . 
         . . # . . 
         . . . . . 
-        . . . . .
-        `</field></block></statement><value name="IF1"><shadow type="logic_boolean" id="dLCD9;RyO,m?{H4,*@Mj"><field name="BOOL">FALSE</field></shadow><block type="Tinybit_Line_Sensor" id="0`Ym+ax!tVl-sV*xsquS"><field name="direct">Tinybit.enPos.RightState</field><field name="value">Tinybit.enLineState.Black</field></block></value><statement name="DO1"><block type="device_show_leds" id=",[7=3eymb:$0cVDwa^J!"><field name="LEDS">`
-        . . . . . 
-        . . . . . 
-        . . # # # 
-        . . . . . 
-        . . . . .
-        `</field></block></statement><value name="IF2"><shadow type="logic_boolean" id="B?|IQjj*gM}hC__DpW}i"><field name="BOOL">FALSE</field></shadow><block type="Tinybit_Line_Sensor" id="5D$D3kZir,%Srq0Vki8g"><field name="direct">Tinybit.enPos.LeftState</field><field name="value">Tinybit.enLineState.Black</field></block></value><statement name="DO2"><block type="device_show_leds" id="epb*nft(z:~hy=nQ?1lb"><field name="LEDS">`
-        . . . . . 
-        # . . . . 
-        # . . . . 
-        # . . . . 
-        . . . . .
-        `</field></block></statement><value name="IF3"><shadow type="logic_boolean" id="Dy#kR7D}0k]P2+!S#7C#"><field name="BOOL">FALSE</field></shadow><block type="logic_operation" id="Mt~xRohmf9XQ@bnC#N;c"><field name="OP">AND</field><value name="A"><block type="Tinybit_Line_Sensor" id=",XiT`QtAyYh,JvfCP]]j"><field name="direct">Tinybit.enPos.LeftState</field><field name="value">Tinybit.enLineState.White</field></block></value><value name="B"><block type="Tinybit_Line_Sensor" id="T/s(j,%L3=juoo`;,)}A"><field name="direct">Tinybit.enPos.RightState</field><field name="value">Tinybit.enLineState.White</field></block></value></block></value><statement name="DO3"><block type="device_show_leds" id="W|$._{rq1yhOpeu,n(8l"><field name="LEDS">`
-        . . . . . 
-        . . . . . 
-        . # # # . 
-        . . . . . 
-        . . . . .
-        `</field></block></statement><statement name="ELSE"><block type="device_show_leds" id="2|VRri;wjC8PAlhJ9)R6"><field name="LEDS">`
-        . . . . . 
-        . . . . . 
+        . . # . .
+        `</field></block></statement><value name="IF3"><shadow type="logic_boolean" id="fHE$|P%Rr45LgUtswcwa"><field name="BOOL">TRUE</field></shadow><block type="logic_operation" id="jKbK_8#JKN4g7|l/#;}`"><field name="OP">AND</field><value name="A"><shadow type="logic_boolean" id="{^pW?EdyYz(WpdgZJ:|u"><field name="BOOL">TRUE</field></shadow><block type="Tinybit_Line_Sensor" id="`ZlAHX):GJ^~A)O17!PA"><field name="direct">Tinybit.enPos.LeftState</field><field name="value">Tinybit.enLineState.White</field></block></value><value name="B"><shadow type="logic_boolean" id="okJCJS|*VbC{ySh7A9pl"><field name="BOOL">TRUE</field></shadow><block type="Tinybit_Line_Sensor" id="p2`}UPh+#DN5?+gmF/$7"><field name="direct">Tinybit.enPos.RightState</field><field name="value">Tinybit.enLineState.White</field></block></value></block></value><statement name="DO3"><block type="Tinybit_CarCtrlSpeed" id="**RN7L^fX@0rQ!vYoD{a"><field name="index">Tinybit.CarState.Car_Left</field><value name="speed"><shadow type="math_number_minmax" id="yqmW+-CPfTWI{M$o*SXF"><mutation min="0" max="255" precision="0"></mutation><field name="SLIDER">69</field></shadow></value></block></statement><statement name="ELSE"><block type="device_show_leds" id=";9^B+J/Zk?JsqLPceeMG"><field name="LEDS">`
+        . . # . . 
+        . . # . . 
         . . # . . 
         . . . . . 
-        . . . . .
-        `</field></block></statement></block></statement></block></statement></block></xml>
+        . . # . .
+        `</field></block></statement></block></statement></block></statement></block><block type="device_forever" id="X@oR^VL^Wv9CKHnDq#p/" x="20" y="1107"></block></xml>
