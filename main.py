@@ -1,19 +1,16 @@
 while True:
     if Tinybit.Line_Sensor(Tinybit.enPos.LEFT_STATE, Tinybit.enLineState.BLACK) and Tinybit.Line_Sensor(Tinybit.enPos.RIGHT_STATE, Tinybit.enLineState.BLACK):
-        Tinybit.car_ctrl_speed(Tinybit.CarState.CAR_RIGHT, 60)
+        Tinybit.car_sport(70, 70)
     elif Tinybit.Line_Sensor(Tinybit.enPos.RIGHT_STATE, Tinybit.enLineState.BLACK):
-        Tinybit.car_ctrl_speed(Tinybit.CarState.CAR_RUN, 69)
+        Tinybit.car_sport(65, 0)
     elif Tinybit.Line_Sensor(Tinybit.enPos.LEFT_STATE, Tinybit.enLineState.BLACK):
-        basic.show_leds("""
-            . . # . .
-            . . # . .
-            . . # . .
-            . . . . .
-            . . # . .
-            """)
+        Tinybit.car_sport(0, 65)
     elif Tinybit.Line_Sensor(Tinybit.enPos.LEFT_STATE, Tinybit.enLineState.WHITE) and Tinybit.Line_Sensor(Tinybit.enPos.RIGHT_STATE, Tinybit.enLineState.WHITE):
-        Tinybit.car_ctrl_speed(Tinybit.CarState.CAR_LEFT, 69)
+        pass
     else:
+        Tinybit.car_sport(0, 0)
+        music.play(music.tone_playable(262, music.beat(BeatFraction.BREVE)),
+            music.PlaybackMode.UNTIL_DONE)
         basic.show_leds("""
             . . # . .
             . . # . .
@@ -21,3 +18,7 @@ while True:
             . . . . .
             . . # . .
             """)
+
+def on_forever():
+    pass
+basic.forever(on_forever)
