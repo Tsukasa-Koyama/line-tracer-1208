@@ -6,7 +6,7 @@ while (true) {
     } else if (Tinybit.Line_Sensor(Tinybit.enPos.LeftState, Tinybit.enLineState.Black)) {
         Tinybit.car_sport(0, 62)
     } else if (Tinybit.Line_Sensor(Tinybit.enPos.LeftState, Tinybit.enLineState.White) && Tinybit.Line_Sensor(Tinybit.enPos.RightState, Tinybit.enLineState.White)) {
-        Tinybit.car_sport(0, 62)
+        Tinybit.car_sport(62, 0)
     } else {
         basic.showLeds(`
             . . # . .
