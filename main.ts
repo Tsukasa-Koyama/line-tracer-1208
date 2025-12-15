@@ -1,8 +1,8 @@
 while (true) {
     if (Tinybit.Line_Sensor(Tinybit.enPos.LeftState, Tinybit.enLineState.Black) && Tinybit.Line_Sensor(Tinybit.enPos.RightState, Tinybit.enLineState.Black)) {
-        Tinybit.CarCtrlSpeed(Tinybit.CarState.Car_Right, 60)
+        Tinybit.car_sport(0, 62)
     } else if (Tinybit.Line_Sensor(Tinybit.enPos.RightState, Tinybit.enLineState.Black)) {
-        Tinybit.CarCtrlSpeed(Tinybit.CarState.Car_Run, 69)
+        Tinybit.car_sport(65, 65)
     } else if (Tinybit.Line_Sensor(Tinybit.enPos.LeftState, Tinybit.enLineState.Black)) {
         basic.showLeds(`
             . . # . .
@@ -12,7 +12,7 @@ while (true) {
             . . # . .
             `)
     } else if (Tinybit.Line_Sensor(Tinybit.enPos.LeftState, Tinybit.enLineState.White) && Tinybit.Line_Sensor(Tinybit.enPos.RightState, Tinybit.enLineState.White)) {
-        Tinybit.CarCtrlSpeed(Tinybit.CarState.Car_Left, 69)
+        Tinybit.car_sport(65, 0)
     } else {
         basic.showLeds(`
             . . # . .
