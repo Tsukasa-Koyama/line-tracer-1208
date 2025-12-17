@@ -10,7 +10,8 @@ input.on_button_pressed(Button.B, on_button_pressed_b)
 
 button_state = False
 button_state = False
-while True:
+
+def on_forever():
     while button_state:
         if Tinybit.Line_Sensor(Tinybit.enPos.LEFT_STATE, Tinybit.enLineState.BLACK) and Tinybit.Line_Sensor(Tinybit.enPos.RIGHT_STATE, Tinybit.enLineState.BLACK):
             Tinybit.car_sport(90, 90)
@@ -61,7 +62,4 @@ while True:
                 """)
     Tinybit.car_sport(0, 0)
     basic.show_string("P")
-
-def on_forever():
-    pass
 basic.forever(on_forever)
